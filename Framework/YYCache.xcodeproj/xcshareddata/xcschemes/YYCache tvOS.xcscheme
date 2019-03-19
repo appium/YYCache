@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "641EE7212240E51B00173FCB"
-               BuildableName = "YYCache tvOS.framework"
+               BuildableName = "YYCache.framework"
                BlueprintName = "YYCache tvOS"
                ReferencedContainer = "container:YYCache.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "641EE7212240E51B00173FCB"
-            BuildableName = "YYCache tvOS.framework"
+            BuildableName = "YYCache.framework"
             BlueprintName = "YYCache tvOS"
             ReferencedContainer = "container:YYCache.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "641EE7212240E51B00173FCB"
-            BuildableName = "YYCache tvOS.framework"
+            BuildableName = "YYCache.framework"
             BlueprintName = "YYCache tvOS"
             ReferencedContainer = "container:YYCache.xcodeproj">
          </BuildableReference>
