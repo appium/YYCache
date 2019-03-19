@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		641EE7262240E51B00173FCB /* YYCache_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 641EE7242240E51B00173FCB /* YYCache_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9F591EB1F05472F00769742 /* YYCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F591E31F05472F00769742 /* YYCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9F591EC1F05472F00769742 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F591E41F05472F00769742 /* YYCache.m */; };
 		D9F591ED1F05472F00769742 /* YYDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F591E51F05472F00769742 /* YYDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		641EE7222240E51B00173FCB /* YYCache_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYCache_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		641EE7242240E51B00173FCB /* YYCache_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCache_tvOS.h; sourceTree = "<group>"; };
+		641EE7252240E51B00173FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D93C45AC1F05445A009F80F9 /* YYCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93C45B01F05445A009F80F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9F591E31F05472F00769742 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
@@ -39,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		641EE71F2240E51B00173FCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D93C45A81F05445A009F80F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,10 +64,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		641EE7232240E51B00173FCB /* YYCache tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				641EE7242240E51B00173FCB /* YYCache_tvOS.h */,
+				641EE7252240E51B00173FCB /* Info.plist */,
+			);
+			path = "YYCache tvOS";
+			sourceTree = "<group>";
+		};
 		D93C45A21F05445A009F80F9 = {
 			isa = PBXGroup;
 			children = (
 				D9F591E21F05472F00769742 /* YYCache */,
+				641EE7232240E51B00173FCB /* YYCache tvOS */,
 				D9F591F61F05477500769742 /* Frameworks */,
 				D93C45AD1F05445A009F80F9 /* Products */,
 			);
@@ -66,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				D93C45AC1F05445A009F80F9 /* YYCache.framework */,
+				641EE7222240E51B00173FCB /* YYCache_tvOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +123,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		641EE71D2240E51B00173FCB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				641EE7262240E51B00173FCB /* YYCache_tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D93C45A91F05445A009F80F9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +145,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		641EE7212240E51B00173FCB /* YYCache tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 641EE7292240E51B00173FCB /* Build configuration list for PBXNativeTarget "YYCache tvOS" */;
+			buildPhases = (
+				641EE71D2240E51B00173FCB /* Headers */,
+				641EE71E2240E51B00173FCB /* Sources */,
+				641EE71F2240E51B00173FCB /* Frameworks */,
+				641EE7202240E51B00173FCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YYCache tvOS";
+			productName = "YYCache tvOS";
+			productReference = 641EE7222240E51B00173FCB /* YYCache_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D93C45AB1F05445A009F80F9 /* YYCache */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D93C45B41F05445A009F80F9 /* Build configuration list for PBXNativeTarget "YYCache" */;
@@ -142,6 +190,10 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = ibireme;
 				TargetAttributes = {
+					641EE7212240E51B00173FCB = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Manual;
+					};
 					D93C45AB1F05445A009F80F9 = {
 						CreatedOnToolsVersion = 9.0;
 					};
@@ -160,11 +212,19 @@
 			projectRoot = "";
 			targets = (
 				D93C45AB1F05445A009F80F9 /* YYCache */,
+				641EE7212240E51B00173FCB /* YYCache tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		641EE7202240E51B00173FCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D93C45AA1F05445A009F80F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,6 +235,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		641EE71E2240E51B00173FCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D93C45A71F05445A009F80F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +256,61 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		641EE7272240E51B00173FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "YYCache tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibireme.YYCache-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		641EE7282240E51B00173FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "YYCache tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibireme.YYCache-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 		D93C45B21F05445A009F80F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -340,6 +462,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		641EE7292240E51B00173FCB /* Build configuration list for PBXNativeTarget "YYCache tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				641EE7272240E51B00173FCB /* Debug */,
+				641EE7282240E51B00173FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D93C45A61F05445A009F80F9 /* Build configuration list for PBXProject "YYCache" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
