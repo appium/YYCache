@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		641EE7262240E51B00173FCB /* YYCache_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 641EE7242240E51B00173FCB /* YYCache_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		641EE72B2240E69000173FCB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641EE72A2240E69000173FCB /* QuartzCore.framework */; };
+		641EE72D2240E69B00173FCB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641EE72C2240E69B00173FCB /* CoreFoundation.framework */; };
+		641EE72F2240E6A000173FCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641EE72E2240E6A000173FCB /* UIKit.framework */; };
+		641EE7312240E6AC00173FCB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 641EE7302240E6AC00173FCB /* libsqlite3.tbd */; };
+		641EE7322240E6CD00173FCB /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F591E41F05472F00769742 /* YYCache.m */; };
+		641EE7332240E6D200173FCB /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F591EA1F05472F00769742 /* YYMemoryCache.m */; };
+		641EE7342240E6D600173FCB /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F591E61F05472F00769742 /* YYDiskCache.m */; };
+		641EE7352240E6DA00173FCB /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F591E81F05472F00769742 /* YYKVStorage.m */; };
+		641EE7362240E71B00173FCB /* YYCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F591E31F05472F00769742 /* YYCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		641EE7372240E72600173FCB /* YYMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F591E91F05472F00769742 /* YYMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		641EE7382240E72D00173FCB /* YYDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F591E51F05472F00769742 /* YYDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		641EE7392240E73300173FCB /* YYKVStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F591E71F05472F00769742 /* YYKVStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9F591EB1F05472F00769742 /* YYCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F591E31F05472F00769742 /* YYCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9F591EC1F05472F00769742 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F591E41F05472F00769742 /* YYCache.m */; };
 		D9F591ED1F05472F00769742 /* YYDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F591E51F05472F00769742 /* YYDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +37,10 @@
 		641EE7222240E51B00173FCB /* YYCache_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYCache_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		641EE7242240E51B00173FCB /* YYCache_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCache_tvOS.h; sourceTree = "<group>"; };
 		641EE7252240E51B00173FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		641EE72A2240E69000173FCB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		641EE72C2240E69B00173FCB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		641EE72E2240E6A000173FCB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		641EE7302240E6AC00173FCB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
 		D93C45AC1F05445A009F80F9 /* YYCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93C45B01F05445A009F80F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9F591E31F05472F00769742 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
@@ -47,6 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641EE7312240E6AC00173FCB /* libsqlite3.tbd in Frameworks */,
+				641EE72F2240E6A000173FCB /* UIKit.framework in Frameworks */,
+				641EE72D2240E69B00173FCB /* CoreFoundation.framework in Frameworks */,
+				641EE72B2240E69000173FCB /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +130,10 @@
 		D9F591F61F05477500769742 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				641EE7302240E6AC00173FCB /* libsqlite3.tbd */,
+				641EE72E2240E6A000173FCB /* UIKit.framework */,
+				641EE72C2240E69B00173FCB /* CoreFoundation.framework */,
+				641EE72A2240E69000173FCB /* QuartzCore.framework */,
 				D9F591F91F05477B00769742 /* UIKit.framework */,
 				D9F591F71F05477500769742 /* CoreFoundation.framework */,
 				D9F591FB1F05478400769742 /* QuartzCore.framework */,
@@ -127,7 +150,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				641EE7262240E51B00173FCB /* YYCache_tvOS.h in Headers */,
+				641EE7362240E71B00173FCB /* YYCache.h in Headers */,
+				641EE7372240E72600173FCB /* YYMemoryCache.h in Headers */,
+				641EE7382240E72D00173FCB /* YYDiskCache.h in Headers */,
+				641EE7392240E73300173FCB /* YYKVStorage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641EE7352240E6DA00173FCB /* YYKVStorage.m in Sources */,
+				641EE7342240E6D600173FCB /* YYDiskCache.m in Sources */,
+				641EE7332240E6D200173FCB /* YYMemoryCache.m in Sources */,
+				641EE7322240E6CD00173FCB /* YYCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
