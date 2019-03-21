@@ -1,9 +1,6 @@
 language: objective-c
 osx_image: xcode10.1
 
-cache:
-  carthage: false
-
 before_install:
   - env
   - xcodebuild -version
@@ -14,8 +11,4 @@ script:
   - set -o pipefail
   - xcodebuild clean build -project Framework/YYCache.xcodeproj -scheme "YYCache iOS" | xcpretty
   - xcodebuild clean build -project Framework/YYCache.xcodeproj -scheme "YYCache tvOS" | xcpretty
-  - echo "git \"file://$(pwd)\" \"${TRAVIS_PULL_REQUEST_BRANCH}\"" > Cartfile
-  - cat Cartfile
-  - carthage update --platform tvos
-  - carthage update --platform ios
 
