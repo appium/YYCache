@@ -19,8 +19,6 @@
 		641EE7372240E72600173FCB /* YYMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F591E91F05472F00769742 /* YYMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		641EE7382240E72D00173FCB /* YYDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F591E51F05472F00769742 /* YYDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		641EE7392240E73300173FCB /* YYKVStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F591E71F05472F00769742 /* YYKVStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		717C0DBC2519082000CAA6EC /* IOSSettings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 717C0DBB2519082000CAA6EC /* IOSSettings.xcconfig */; };
-		717C0DC42519083900CAA6EC /* TVOSSettings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 717C0DC32519083900CAA6EC /* TVOSSettings.xcconfig */; };
 		D9F591EB1F05472F00769742 /* YYCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F591E31F05472F00769742 /* YYCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9F591EC1F05472F00769742 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F591E41F05472F00769742 /* YYCache.m */; };
 		D9F591ED1F05472F00769742 /* YYDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F591E51F05472F00769742 /* YYDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,8 +39,6 @@
 		641EE72C2240E69B00173FCB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		641EE72E2240E6A000173FCB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		641EE7302240E6AC00173FCB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.1.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
-		717C0DBB2519082000CAA6EC /* IOSSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = IOSSettings.xcconfig; sourceTree = "<group>"; };
-		717C0DC32519083900CAA6EC /* TVOSSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TVOSSettings.xcconfig; sourceTree = "<group>"; };
 		D93C45AC1F05445A009F80F9 /* YYCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93C45B01F05445A009F80F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9F591E31F05472F00769742 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
@@ -85,19 +81,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		717C0DBA251907DD00CAA6EC /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				717C0DBB2519082000CAA6EC /* IOSSettings.xcconfig */,
-				717C0DC32519083900CAA6EC /* TVOSSettings.xcconfig */,
-			);
-			path = Configuration;
-			sourceTree = "<group>";
-		};
 		D93C45A21F05445A009F80F9 = {
 			isa = PBXGroup;
 			children = (
-				717C0DBA251907DD00CAA6EC /* Configuration */,
 				D9F591E21F05472F00769742 /* YYCache */,
 				D9F591F61F05477500769742 /* Frameworks */,
 				D93C45AD1F05445A009F80F9 /* Products */,
@@ -250,7 +236,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				717C0DC42519083900CAA6EC /* TVOSSettings.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				717C0DBC2519082000CAA6EC /* IOSSettings.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +276,6 @@
 /* Begin XCBuildConfiguration section */
 		641EE7272240E51B00173FCB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 717C0DC32519083900CAA6EC /* TVOSSettings.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
@@ -321,7 +304,6 @@
 		};
 		641EE7282240E51B00173FCB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 717C0DC32519083900CAA6EC /* TVOSSettings.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
@@ -396,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -448,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -459,7 +441,6 @@
 		};
 		D93C45B51F05445A009F80F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 717C0DBB2519082000CAA6EC /* IOSSettings.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -471,7 +452,6 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibireme.YYCache;
 				PRODUCT_NAME = YYCache;
 				SKIP_INSTALL = YES;
@@ -481,7 +461,6 @@
 		};
 		D93C45B61F05445A009F80F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 717C0DBB2519082000CAA6EC /* IOSSettings.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -493,7 +472,6 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibireme.YYCache;
 				PRODUCT_NAME = YYCache;
 				SKIP_INSTALL = YES;
