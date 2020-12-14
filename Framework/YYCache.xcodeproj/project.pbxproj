@@ -277,6 +277,8 @@
 		641EE7272240E51B00173FCB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ARCHS[sdk=appletvos*]" = arm64;
+				"ARCHS[sdk=appletvsimulator*]" = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
@@ -308,6 +310,8 @@
 		641EE7282240E51B00173FCB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ARCHS[sdk=appletvos*]" = arm64;
+				"ARCHS[sdk=appletvsimulator*]" = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
@@ -453,6 +457,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -475,6 +481,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
